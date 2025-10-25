@@ -24,6 +24,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.use('/', router);
-const port = process.env.port || 6000
+const port = process.env.port || 6000;
 app.listen(port, () => console.log(`Quiz MVC running on http://localhost:${port}`));
 
