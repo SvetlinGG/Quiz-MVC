@@ -89,14 +89,13 @@ main {
 .q {
     background: white;
     border-radius: 8px;
-    padding: 0.8rem 1.5rem;
-    margin-bottom: 0.5rem;
+    padding: 0.6rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-left: 4px solid #667eea;
     transition: all 0.3s ease;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .q:hover {
@@ -105,20 +104,22 @@ main {
 
 .q h3 {
     color: #2a5298;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
 }
 
 .opt {
     display: block;
-    margin: 0.3rem 0;
-    padding: 0.4rem 0.6rem;
+    margin: 0.2rem 0;
+    padding: 0.3rem 0.4rem;
     background: #f8f9ff;
     border: 1px solid #e1e5f7;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    line-height: 1.1;
 }
 
 .opt:hover {
@@ -262,9 +263,19 @@ footer {
     animation: fadeIn 0.6s ease-out;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    flex: 1;
+    padding: 0.5rem;
+}
+
 @media (max-width: 768px) {
     main { padding: 1rem; }
     header h1 { font-size: 1.8rem; }
     .actions { flex-direction: column; }
     button { width: 100%; }
+    form { grid-template-columns: 1fr; grid-template-rows: repeat(6, 1fr); }
 }

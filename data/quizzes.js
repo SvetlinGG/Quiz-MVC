@@ -1,25 +1,43 @@
 const quizzes = [
     {
       id: 1,
-      title: 'MVC & Web Basics',
+      title: 'NodeJS Quiz',
       questions: [
         {
           id: 101,
-          text: "Which method is used to define a GET route in Express?",
-          options: ["app.route()", "app.get()", "express.get()", "router.create()"],
-          answer: "app.get()"
+          text: "What is Node.js?",
+          options: ["JavaScript framework", "JavaScript runtime", "Database", "Web browser"],
+          answer: "JavaScript runtime"
         },
         {
           id: 102,
-          text: "In MVC architecture, what does the 'C' stand for?",
-          options: ["Code", "Controller", "Class", "Content"],
-          answer: "Controller"
+          text: "Which module creates HTTP server?",
+          options: ["fs", "path", "http", "url"],
+          answer: "http"
         },
         {
           id: 103,
-          text: "Which part of MVC handles user input?",
-          options: ["Model", "View", "Controller", "Template"],
-          answer: "Controller"
+          text: "What does npm stand for?",
+          options: ["Node Package Manager", "New Project Manager", "Node Program Manager", "Network Package Manager"],
+          answer: "Node Package Manager"
+        },
+        {
+          id: 104,
+          text: "Async file reading method?",
+          options: ["fs.readFileSync()", "fs.readFile()", "fs.read()", "fs.open()"],
+          answer: "fs.readFile()"
+        },
+        {
+          id: 105,
+          text: "What is Express.js?",
+          options: ["Database", "Web framework", "Template engine", "Testing framework"],
+          answer: "Web framework"
+        },
+        {
+          id: 106,
+          text: "Global install command?",
+          options: ["npm install package", "npm install -g package", "npm global package", "npm add package"],
+          answer: "npm install -g package"
         }
       ]
     }
