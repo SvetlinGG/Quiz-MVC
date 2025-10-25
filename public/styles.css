@@ -24,10 +24,23 @@ main {
     margin-bottom: 1rem; 
     background: lightblue; 
 }
-.opt { display: block; margin: .25rem 0; }
-.actions { margin-top: 1rem; display:flex; gap:.5rem; }
-button { padding:.5rem .8rem; cursor:pointer; }
-button.ghost { background:#fff; border:1px solid #999; }
+.opt { 
+    display: block; 
+    margin: .25rem 0; 
+}
+.actions { 
+    margin-top: 1rem; 
+    display:flex; 
+    gap:.5rem; 
+}
+button { 
+    padding:.5rem .8rem; 
+    cursor:pointer; 
+}
+button.ghost { 
+    background:#fff; 
+    border:1px solid #999; 
+}
 .details { width:100%; border-collapse: collapse; margin-top:1rem; background:#fff; }
 .details th, .details td { border:1px solid #ddd; padding:.5rem; }
 .ok { background:#e9f9ed; } .bad { background:#fdeaea; }
