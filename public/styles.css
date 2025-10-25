@@ -94,8 +94,9 @@ main {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-left: 4px solid #667eea;
     transition: all 0.3s ease;
-    width: 100%;
-    max-width: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .q:hover {
@@ -135,8 +136,9 @@ input[type="radio"] {
 .actions {
     margin-top: 0.5rem;
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
-    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     padding: 0 1rem;
 }
@@ -151,6 +153,11 @@ button {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+button[type="submit"] {
+    padding: 0.72rem 1.44rem;
+    font-size: 1.08rem;
 }
 
 button:not(.ghost) {
