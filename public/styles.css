@@ -17,13 +17,14 @@ body {
 header {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     flex-shrink: 0;
+    position: relative;
 }
 
 header h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
@@ -39,11 +40,10 @@ header h1:hover {
 }
 
 main {
-    padding: 1rem;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 0.5rem;
+    width: 100%;
     flex: 1;
-    overflow-y: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -51,8 +51,10 @@ main {
 .list {
     list-style: none;
     display: grid;
-    gap: 0.8rem;
+    gap: 0.5rem;
     flex: 1;
+    overflow-y: auto;
+    padding: 0 1rem;
 }
 
 .list li {
@@ -86,12 +88,14 @@ main {
 
 .q {
     background: white;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-bottom: 0.8rem;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border-left: 5px solid #667eea;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: none;
 }
 
 .q:hover {
@@ -100,20 +104,20 @@ main {
 
 .q h3 {
     color: #2a5298;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .opt {
     display: block;
-    margin: 0.5rem 0;
-    padding: 0.6rem 0.8rem;
+    margin: 0.3rem 0;
+    padding: 0.4rem 0.6rem;
     background: #f8f9ff;
-    border: 2px solid #e1e5f7;
-    border-radius: 8px;
+    border: 1px solid #e1e5f7;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .opt:hover {
@@ -129,18 +133,19 @@ input[type="radio"] {
 }
 
 .actions {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     flex-shrink: 0;
+    padding: 0 1rem;
 }
 
 button {
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 20px;
-    font-size: 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -209,22 +214,24 @@ footer {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
     text-align: center;
-    padding: 0.8rem;
+    padding: 0.4rem;
     box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
     flex-shrink: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #timer {
-    margin-top: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
     font-weight: 700;
-    font-size: 1.2rem;
-    color: #667eea;
-    text-align: center;
-    padding: 1rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .score-msg {
