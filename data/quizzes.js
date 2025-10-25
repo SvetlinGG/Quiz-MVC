@@ -1,4 +1,4 @@
-export const quizzes = [
+const quizzes = [
     {
       id: 1,
       title: 'MVC & Web Basics',
@@ -24,4 +24,5 @@ export const quizzes = [
       ]
     }
   ];
-  
+
+module.exports = { quizzes };
