@@ -3,7 +3,7 @@
 <form action="/quiz/{{quizId}}/submit" method="POST" id="quizForm">
   {{#each questions}}
     <fieldset class="q">
-      <legend>Question {{@index}} of {{../questions.length}}</legend>
+      {{!-- <legend>Question {{@index}} of {{../questions.length}}</legend> --}}
       <p class="q-text">{{text}}</p>
       {{#each options}}
         <label class="opt">
