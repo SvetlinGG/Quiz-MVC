@@ -1,0 +1,14 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background:#fafafa; }
+header, footer { padding: 1rem 1.25rem; background:#111; color:#fff; }
+main { padding: 1.25rem; }
+.list { list-style: none; padding: 0; }
+.list li { margin: .5rem 0; }
+.q { border: 1px solid #ddd; padding: .75rem; margin-bottom: 1rem; background: #fff; }
+.opt { display: block; margin: .25rem 0; }
+.actions { margin-top: 1rem; display:flex; gap:.5rem; }
+button { padding:.5rem .8rem; cursor:pointer; }
+button.ghost { background:#fff; border:1px solid #999; }
+.details { width:100%; border-collapse: collapse; margin-top:1rem; background:#fff; }
+.details th, .details td { border:1px solid #ddd; padding:.5rem; }
+.ok { background:#e9f9ed; } .bad { background:#fdeaea; }
+#timer { margin-top: .75rem; font-weight: 600; }
