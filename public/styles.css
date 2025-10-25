@@ -11,9 +11,19 @@ header, footer {
 main { 
     padding: 1.25rem; 
 }
-.list { list-style: none; padding: 0; }
-.list li { margin: .5rem 0; }
-.q { border: 1px solid #ddd; padding: .75rem; margin-bottom: 1rem; background: #fff; }
+.list { 
+    list-style: none; 
+    padding: 0; 
+}
+.list li { 
+    margin: .5rem 0; 
+}
+.q { 
+    border: 1px solid #ddd; 
+    padding: .75rem; 
+    margin-bottom: 1rem; 
+    background: lightblue; 
+}
 .opt { display: block; margin: .25rem 0; }
 .actions { margin-top: 1rem; display:flex; gap:.5rem; }
 button { padding:.5rem .8rem; cursor:pointer; }
