@@ -40,7 +40,7 @@ header h1:hover {
 }
 
 main {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
     width: 100%;
     flex: 1;
     overflow: hidden;
@@ -106,12 +106,16 @@ main {
 
 .q h3 {
     color: #2a5298;
-    margin-bottom: 0.3rem;
-    font-size: 0.75rem;
-    line-height: 1.1;
+    margin-bottom: 0.4rem;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 1.0;
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
+    text-align: left;
+    max-height: 3em;
+    overflow: hidden;
 }
 
 .opt {
@@ -276,7 +280,8 @@ form {
     grid-template-rows: repeat(3, 1fr);
     gap: 0.5rem;
     flex: 1;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
