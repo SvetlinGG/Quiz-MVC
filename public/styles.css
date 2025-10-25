@@ -1,6 +1,16 @@
-body { font-family: system-ui, Arial, sans-serif; margin: 0; background:#fafafa; }
-header, footer { padding: 1rem 1.25rem; background:#111; color:#fff; }
-main { padding: 1.25rem; }
+body { 
+    font-family: system-ui, Arial, sans-serif; 
+    margin: 0; 
+    background:#fafafa; 
+}
+header, footer { 
+    padding: 1rem 1.25rem; 
+    background:#111; 
+    color:#fff; 
+}
+main { 
+    padding: 1.25rem; 
+}
 .list { list-style: none; padding: 0; }
 .list li { margin: .5rem 0; }
 .q { border: 1px solid #ddd; padding: .75rem; margin-bottom: 1rem; background: #fff; }
