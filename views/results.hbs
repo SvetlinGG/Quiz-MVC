@@ -1,0 +1,20 @@
+<h2>Results — {{title}}</h2>
+<p>You scored <strong>{{correct}}</strong> / {{total}}. <em>{{scoreMsg}}</em></p>
+
+<table class="details">
+  <thead><tr><th>#</th><th>Question</th><th>Your answer</th><th>Correct</th></tr></thead>
+  <tbody>
+  {{#each details}}
+    <tr class="{{#if isCorrect}}ok{{else}}bad{{/if}}">
+      <td>{{index}}</td>
+      <td>{{question}}</td>
+      <td>{{user}}</td>
+      <td>{{correctAnswer}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+<form action="/quiz/{{quizId}}/retake" method="POST">
+  <button type="submit">Retake Quiz</button>
+</form>
