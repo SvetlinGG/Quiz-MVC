@@ -1,0 +1,39 @@
+<h2>{{title}}</h2>
+
+<form action="/quiz/{{quizId}}/submit" method="POST" id="quizForm">
+  {{#each questions}}
+    <fieldset class="q">
+      <legend>Question {{@index}} of {{../questions.length}}</legend>
+      <p class="q-text">{{text}}</p>
+      {{#each options}}
+        <label class="opt">
+          <input type="radio" name="q_{{../id}}" value="{{this}}" required>
+          <span>{{this}}</span>
+        </label>
+      {{/each}}
+    </fieldset>
+  {{/each}}
+
+  <div class="actions">
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<form action="/quiz/{{quizId}}/retake" method="POST">
+  <button type="submit" class="ghost">Retake Quiz</button>
+</form>
+
+<div id="timer" aria-live="polite"></div>
+<script>
+  let secs = 10 * 60;
+  const el = document.getElementById('timer');
+  const it = setInterval(() => {
+    const m = String(Math.floor(secs / 60)).padStart(2,'0');
+    const s = String(secs % 60).padStart(2,'0');
+    el.textContent = `Time left: ${m}:${s}`;
+    if (secs-- <= 0) {
+      clearInterval(it);
+      document.getElementById('quizForm').submit();
+    }
+  }, 1000);
+</script>
