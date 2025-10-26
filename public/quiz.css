@@ -19,7 +19,7 @@ form:has(button.retake) {
 .q {
     background: white;
     border-radius: 8px;
-    padding: 0.5rem;
+    padding: 0.45rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-left: 4px solid #667eea;
     transition: all 0.3s ease;
@@ -29,17 +29,18 @@ form:has(button.retake) {
     overflow: hidden;
     min-height: 0;
     animation: fadeIn 0.6s ease-out;
+    height: 90%;
 }
 
 .q:hover {
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-.q h3 {
+.q-text {
     color: #2a5298;
-    margin-bottom: 0.4rem;
-    margin-top: 0.3rem;
-    font-size: 0.7rem;
+    margin-bottom: 0.36rem;
+    margin-top: 0.27rem;
+    font-size: 1.3rem;
     line-height: 1.0;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -47,19 +48,20 @@ form:has(button.retake) {
     text-align: left;
     max-height: 3em;
     overflow: hidden;
+    font-weight: 600;
 }
 
 .opt {
     display: block;
-    margin: 0.15rem 0;
-    padding: 0.25rem 0.3rem;
+    margin: 0.2rem 0;
+    padding: 0.4rem 0.5rem;
     background: #f8f9ff;
     border: 1px solid #e1e5f7;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 0.7rem;
-    line-height: 1.0;
+    font-size: 1.2rem;
+    line-height: 1.1;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
