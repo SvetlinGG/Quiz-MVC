@@ -16,11 +16,10 @@
 
   <div class="actions">
     <button type="submit">Submit</button>
+    <form action="/quiz/{{quizId}}/retake" method="POST" style="margin: 0;">
+      <button type="submit" class="ghost">Retake Quiz</button>
+    </form>
   </div>
-</form>
-
-<form action="/quiz/{{quizId}}/retake" method="POST">
-  <button type="submit" class="ghost">Retake Quiz</button>
 </form>
 
 <div id="timer" aria-live="polite"></div>
