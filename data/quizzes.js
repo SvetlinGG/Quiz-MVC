@@ -6,38 +6,38 @@ const quizzes = [
         {
           id: 101,
           text: "What is Node.js?",
-          options: ["JavaScript framework", "JavaScript runtime", "Database", "Web browser"],
-          answer: "JavaScript runtime"
+          options: ["A) JavaScript framework", "B) JavaScript runtime", "C) Database", "D) Web browser"],
+          answer: "B) JavaScript runtime"
         },
         {
           id: 102,
           text: "Which module creates HTTP server?",
-          options: ["fs", "path", "http", "url"],
-          answer: "http"
+          options: ["A) fs", "B) path", "C) http", "D) url"],
+          answer: "C) http"
         },
         {
           id: 103,
           text: "What does npm stand for?",
-          options: ["Node Package Manager", "New Project Manager", "Node Program Manager", "Network Package Manager"],
-          answer: "Node Package Manager"
+          options: ["A) Node Package Manager", "B) New Project Manager", "C) Node Program Manager", "D) Network Package Manager"],
+          answer: "A) Node Package Manager"
         },
         {
           id: 104,
           text: "Async file reading method?",
-          options: ["fs.readFileSync()", "fs.readFile()", "fs.read()", "fs.open()"],
-          answer: "fs.readFile()"
+          options: ["A) fs.readFileSync()", "B) fs.readFile()", "C) fs.read()", "D) fs.open()"],
+          answer: "B) fs.readFile()"
         },
         {
           id: 105,
           text: "What is Express.js?",
-          options: ["Database", "Web framework", "Template engine", "Testing framework"],
-          answer: "Web framework"
+          options: ["A) Database", "B) Web framework", "C) Template engine", "D) Testing framework"],
+          answer: "B) Web framework"
         },
         {
           id: 106,
           text: "Global install command?",
-          options: ["npm install package", "npm install -g package", "npm global package", "npm add package"],
-          answer: "npm install -g package"
+          options: ["A) npm install package", "B) npm install -g package", "C) npm global package", "D) npm add package"],
+          answer: "B) npm install -g package"
         }
       ]
     }
