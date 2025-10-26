@@ -151,8 +151,13 @@ input[type="radio"] {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
     padding: 0 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
 }
 
 button {
