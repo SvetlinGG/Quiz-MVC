@@ -42,7 +42,7 @@
     }
 }
 
-/* Small height screens */
+
 @media (max-height: 700px) {
     header {
         padding: 0.3rem 1rem;
@@ -89,7 +89,56 @@
     }
 }
 
-/* Very small height screens */
+
+@media (max-height: 800px) {
+    body {
+        overflow-y: auto;
+    }
+    
+    main {
+        overflow-y: auto;
+        padding: 0.2rem;
+    }
+    
+    form {
+        height: auto;
+        min-height: calc(100vh - 120px);
+        grid-template-rows: repeat(3, minmax(120px, 1fr)) auto;
+        gap: 0.3rem;
+        padding: 0.3rem;
+    }
+    
+    .q {
+        height: auto;
+        min-height: 120px;
+        padding: 0.3rem;
+    }
+    
+    .q-text {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        max-height: 2.5em;
+        line-height: 1.1;
+    }
+    
+    .opt {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.35rem;
+        margin: 0.1rem 0;
+    }
+    
+    .actions {
+        margin-top: 0.3rem;
+        padding: 0.3rem;
+    }
+    
+    button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+
 @media (max-height: 600px) {
     .q-text {
         font-size: 0.8rem;
