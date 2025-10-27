@@ -11,7 +11,7 @@ function playClickSound() {
     gainNode.connect(audioContext.destination);
     
     
-    oscillator.frequency.setValueAtTime(500, audioContext.currentTime);
+    oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
     oscillator.frequency.exponentialRampToValueAtTime(800, audioContext.currentTime + 0.1);
     
     gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
