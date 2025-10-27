@@ -4,7 +4,9 @@
   "description": "Sirma-Academy-Exam-NodeJS-251025",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "echo 'Build completed'"
   },
   "keywords": [],
   "author": "",
