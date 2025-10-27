@@ -33,6 +33,25 @@
     gap: 10px;
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
+    position: relative;
+}
+
+.list a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: rgba(42, 82, 152, 0.3);
+    transform: scaleY(-1);
+    background: linear-gradient(to bottom, rgba(42, 82, 152, 0.3) 0%, transparent 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: none;
+    text-stroke: none;
+    pointer-events: none;
+    margin-top: 5px;
 }
 
 .list a:before {
@@ -49,4 +68,23 @@ h2 {
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+h2::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.3);
+    transform: scaleY(-1);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, transparent 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    -webkit-text-stroke: none;
+    text-stroke: none;
+    pointer-events: none;
 }

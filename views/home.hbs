@@ -1,8 +1,8 @@
-<h2>{{title}}</h2>
+<h2 data-text="{{title}}">{{title}}</h2>
 <ul class="list">
   {{#each items}}
     <li>
-      <a href="/quiz/{{id}}"><strong>{{title}}</strong></a>
+      <a href="/quiz/{{id}}" data-text="{{title}}"><strong>{{title}}</strong></a>
       <span>({{questionCount}} questions)</span>
     </li>
   {{/each}}
